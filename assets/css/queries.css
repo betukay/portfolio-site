@@ -1,0 +1,107 @@
+/* Big tablet to computer monitors */
+@media (min-width: 1200px) {
+    .hero-text-box {
+      margin-left: 10%;
+      padding: 0 2%;
+      width: 100%;
+    }
+    .row { padding: 0 2%; }
+    .span-2-of-3 {margin-left: 10%}
+}
+
+/* small tables to Tablets in landspace mode  */
+@media (max-width: 1023px) {
+    body { font-size: 18px; }
+    section { padding: 60px 0; }
+    .author { height: 335px; }
+    .eyes { margin-bottom: 27px;}
+}
+
+@media (max-width: 900px) {
+    .author { display: none; }
+}
+
+
+/* Phones to small tablets */
+@media (max-width: 768px) {
+    h1 { font-size: 150%;
+        margin-bottom: 8%;
+    }
+    .about-section .col p { padding: 2% }
+
+    .navbar1 li a:link,
+    .navbar1 li a:visited  {
+      display: block;
+      border: 0;
+      float: right;
+    }
+
+   .navbar1 { display: none;}
+
+    .skills p {
+      font-size: 1.2em;
+      padding: 1%;
+    }
+    .thumb-img {
+      height: 70px;
+      width: 94px;
+    }
+
+    .mobile-nav { display: inline-block; }
+}
+
+@media (max-width: 590px) {
+    h1 { font-size: 110%; }
+
+    .about-section div p, .skills p { position: absolute; }
+
+    .hero-text-box .btn:link {
+    margin-left: 6.0em;
+    }
+
+    .hero-text-box  .row .btn:link {
+      position: absolute;
+      -webkit-transform: translate(50%, 50%);
+              transform: translate(50%, 50%);
+    }
+
+    .skills p { margin-top: 155px;}
+
+    .looking p { font-size: 0.9em; }
+}
+
+/* Small phones */
+@media (max-width: 485px) {
+    h1 { font-size: 0.95em; }
+
+    .box {
+        margin-bottom: 1%;
+        margin-top: 1%;
+        min-height: auto;
+    }
+    .looking p { padding: 0 15%; }
+    .skills p { font-size: 1.3em; }
+    .thum-title { font-size: 0.7em; }
+}
+
+/* Viewport min height*/
+@media screen and (max-height: 425px) {
+     .hero-text-box,
+     .hero-text-box a,
+     .learn-more p {
+      margin: auto;
+     }
+}
+
+@media screen and (max-height: 425px) {
+      .learn-more p {
+        display: none;
+      }
+      .learn-more svg { margin-top: 13%;
+      position:absolute;}
+}
+
+@media screen and (max-height: 250px) {
+      .logo, .mobile-nav, .navbar1 li, .navbar2 li { display: none; }
+      h1 { margin-bottom: 0.2em; }
+}

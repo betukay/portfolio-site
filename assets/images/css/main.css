@@ -1,0 +1,365 @@
+/*------------------------------------------------*/
+/* INITIAL SETUP */
+/*------------------------------------------------*/
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #DCDCDC;
+  color: #565656;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  text-rendering: optimizeLegibility;
+}
+
+/*------------------------------------------------*/
+/* REUSEABLE COMPONENTS */
+/*------------------------------------------------*/
+
+.clearfix:after {
+  content:"";
+  display:table;
+  clear: both;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 40px 0;
+}
+
+.box {
+  background-color: #2980b9;
+  border: 2px solid #2980b9;
+  border-radius: 6px;
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(128, 128, 128, .2);
+    box-shadow: 2px 2px 2px 0px rgba(128, 128, 128, .2);
+  color: #ffffff;
+  position: relative;
+  padding: 1%;
+  text-align: center;
+}
+
+.box:hover,
+.box:active {
+  -webkit-box-shadow: 8px 8px 2px 1px rgba(48, 48, 48, .6);
+    box-shadow: 8px 8px 2px 1px rgba(48, 48, 48, .6);
+  -webkit-transition: -webkit-box-shadow 1.5s;
+  -webkit-transform: translate(-1px, -3px);
+          transform: translate(-1px, -3px);
+  -webkit-transition: bottom 1.5s;
+  transition: bottom 1.5s;
+  transition: -webkit-box-shadow 1.5s;
+  transition: box-shadow 1.5s;
+  transition: box-shadow 1.5s, -webkit-box-shadow 1.5s;
+
+}
+
+/* ------------------ HEADINGS ------------------- */
+
+h1, h2 {
+  font-size: 200%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  word-spacing: 4px;
+}
+
+h1 {
+  font-weight: 200;
+  margin-top: 0;
+  margin-bottom: 0.75em;
+}
+
+h2 {
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 0.35em;
+}
+
+/* ------------------ BUTTONS ------------------- */
+
+.btn:link,
+.btn:visited {
+  border: 1px solid #2980b9;
+  border-radius: 200px;
+  color: #2980b9;
+  display: inline-block;
+  font-weight: 400;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #2980b9;
+  border-radius: 200px;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 400;
+  padding: 10px 30px;
+  text-decoration: none;
+  -webkit-transition: background-color 2.0s, color 0.2s;
+  transition: background-color 2.0s, color 0.2s;
+}
+
+.hero-text-box .btn:link,
+.hero-text-box .btn:visited,
+.hero-text-box .btn:hover,
+.hero-text-box .btn:active {
+  margin-left: 10.0em;
+}
+
+/*------------------------------------------------*/
+/* HEADER */
+/*------------------------------------------------*/
+
+.navbar1 a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.mobile-nav {
+  cursor: pointer;
+  display: none;
+  float: right;
+  margin-top: 1.5em;
+  margin-right: 1.1em;
+}
+
+.mobile-nav svg {
+  font-size: 1.7em;
+}
+
+.main-nav #bars:hover {
+  border: 0px;
+}
+
+header {
+    background-attachment: fixed;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.7)), to(rgba(0,0,0,0.7))), url("../images/coding.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../images/coding.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    height:100vh;
+}
+
+ul li {
+  display: inline-block;
+  margin: 1.5em 0.25em;
+}
+
+.hero-text-box {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 1140px;
+}
+
+.logo {
+  height: 35px;
+  margin-top: 1.2em;
+  margin-right: 0.5em;
+  width: auto;
+  float: left;
+}
+
+.main-nav {
+  list-style: none;
+}
+
+.navbar1 li {
+  float: left;
+  margin-left: .7em;
+  margin-right: .7em;
+}
+
+.navbar2 li {
+  float: right;
+  margin-left: .7em;
+  margin-right: .7em;
+}
+
+.navbar2 li a img {
+  margin-top: 0;
+  margin-left: 0;
+}
+
+a:hover {
+  color: #2980b9;
+  border-bottom: 2px solid #2980b9;
+  padding-bottom: 3px;
+  -webkit-transition: border-bottom;
+  transition: border-bottom;
+}
+
+.icons {
+  float: right;
+  height: 20px;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 1.5em;
+}
+
+.learn-more {
+  bottom: 75px;
+  left: 0px;
+  position: absolute;
+  right: 0px;
+  text-align: center;
+}
+
+.learn-more:hover {
+  cursor: pointer;
+}
+
+/*------------------------------------------------*/
+/* PROJECTS */
+/*------------------------------------------------*/
+
+.box {
+  background-color: #336699;
+  border: 2px solid #808080;
+  min-height: 328px;
+}
+
+.box a:link,
+.box a:visited {
+  color: #ffffff;
+}
+
+.box p {
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+
+.links, .thumb-title {
+  font-weight: 400;
+}
+
+.thumb-img {
+  border: 2px solid #808080;
+  border-radius: 10px;
+  height: 100px;
+  left: 0;
+  right: 0;
+  max-width: 130px;
+}
+
+/* Delete after project production => */
+.none {
+  border: none !important;
+}
+
+
+.thumb-title {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  text-decoration: underline;
+}
+
+.p-link:hover {
+  border: none;
+}
+
+/*------------------------------------------------*/
+/* ABOUT */
+/*------------------------------------------------*/
+
+.about-section {
+  background-color: #2980b9;
+  font-size: 85%;
+  font-weight: 400;
+  color: #fff;
+  height: 440px;
+}
+
+.about-section p {
+  line-height: 1.2;
+}
+
+.author {
+  float: right;
+  height: 350px;
+  width: auto;
+}
+
+.skills p {
+  font-size: 1.8em;
+  margin-top: 0.6em;
+  text-transform: uppercase;
+}
+
+svg {
+  margin: 0 0.2em;
+}
+
+
+/*------------------------------------------------*/
+/* CONTACT */
+/*------------------------------------------------*/
+
+.contact-section {
+  background-color: #565656;
+  color: #ffffff;
+  height: 400px;
+}
+
+.contact-section .bottom-btn {
+  left: 50%;
+  margin-top: 2%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.contact-section {
+  text-align: center;
+}
+
+.contact-section .btn {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.contact-section div p {
+  /* margin-top: 5%; */
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+
+/*------------------------------------------------*/
+/* FOOTER */
+/*------------------------------------------------*/
+
+.eyes {
+  bottom: 0;
+  height: 200px;
+  margin-bottom: 30px;
+  position: absolute;
+  width: auto;
+}
+
+footer {
+  color: #336699;
+  font-size: 0.75em;
+  font-weight: bold;
+  height: 2em;
+  padding-left: 10%;
+  padding-top: 5px;
+  position: absolute;
+  width: 100%;
+}
