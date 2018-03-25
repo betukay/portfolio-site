@@ -252,6 +252,10 @@ a:hover {
   font-weight: 400;
 }
 
+.box p a:hover {
+  border: none;
+}
+
 .thumb-img {
   border: 2px solid #808080;
   border-radius: 10px;
