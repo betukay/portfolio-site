@@ -29,6 +29,8 @@
     }
     .about-section .col p { padding: 2% }
 
+    .box p { font-size: 75% }
+
     .navbar1 li a:link,
     .navbar1 li a:visited  {
       display: block;
@@ -40,15 +42,16 @@
       font-size: 1.2em;
       padding: 1%;
     }
-    .thumb-img {
+    /* .thumb-img {
       height: 70px;
       width: 94px;
-    }
+    } */
 
     .mobile-nav { display: inline-block; }
 }
 
 @media only screen and (max-width: 768px) {
+    .box p {font-size: 80%}
     .navbar1 { display: none;}
 }
 
